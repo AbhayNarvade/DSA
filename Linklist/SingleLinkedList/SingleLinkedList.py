@@ -158,6 +158,16 @@ class SingleLinkedList :
             current = next
 
         self.head = prev
+    # Method for traversing 
+    def traverseLinkedList(self):
+        node = self.head
+
+        while node : 
+            print(node.getData() , end= " -> ")
+            node = node.getNext()
+
+        print('Total element in single linkedlist is ' , self.length)
+        
 
 ll = SingleLinkedList()
 
@@ -182,11 +192,11 @@ ll.reverseLinkedList()
 
 
 
-node = ll.head
+# node = ll.head
 
-while node : 
-    print(node.getData() , end= " -> ")
-    node = node.getNext()
+# while node : 
+#     print(node.getData() , end= " -> ")
+#     node = node.getNext()
 
-print('Total element in single linkedlist is ' , ll.length)
+# print('Total element in single linkedlist is ' , ll.length)
         
