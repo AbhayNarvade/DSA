@@ -37,23 +37,23 @@ class Stack :
         self.limit = 2* self.limit
         self.stk = newstk
 
+if __name__ == '__main__':
 
+    s = Stack(1)
 
-s = Stack(1)
+    s.push(10)
+    print(f'limit is here {s.limit}')
+    s.push(20)
+    s.push(30)
+    print(f'limit is here {s.limit}')
+    s.push(40)
+    s.push(50)
 
-s.push(10)
-print(f'limit is here {s.limit}')
-s.push(20)
-s.push(30)
-print(f'limit is here {s.limit}')
-s.push(40)
-s.push(50)
-
-print( 'This is an peek',s.peek())
-print('this is and pop element', s.pop())
-print( 'This is an peek',s.peek())
-print('this is and pop element', s.pop())
-print( 'This is an peek',s.peek())
-print('this is and pop element', s.pop())
-print( 'This is an peek',s.peek())
-print(f'limit is here {s.limit}')
+    print( 'This is an peek',s.peek())
+    print('this is and pop element', s.pop())
+    print( 'This is an peek',s.peek())
+    print('this is and pop element', s.pop())
+    print( 'This is an peek',s.peek())
+    print('this is and pop element', s.pop())
+    print( 'This is an peek',s.peek())
+    print(f'limit is here {s.limit}')

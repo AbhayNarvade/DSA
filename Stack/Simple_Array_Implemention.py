@@ -34,19 +34,19 @@ class Stack :
         return len(self.stk)
     
 
+if __name__ == '__main__':
+    s = Stack(5)
 
-s = Stack(5)
+    s.push(10)
+    s.push(20)
+    s.push(30)
+    s.push(40)
+    s.push(50)
 
-s.push(10)
-s.push(20)
-s.push(30)
-s.push(40)
-s.push(50)
-
-print( 'This is an peek',s.peek())
-print('this is and pop element', s.pop())
-print( 'This is an peek',s.peek())
-print('this is and pop element', s.pop())
-print( 'This is an peek',s.peek())
-print('this is and pop element', s.pop())
-print( 'This is an peek',s.peek())
+    print( 'This is an peek',s.peek())
+    print('this is and pop element', s.pop())
+    print( 'This is an peek',s.peek())
+    print('this is and pop element', s.pop())
+    print( 'This is an peek',s.peek())
+    print('this is and pop element', s.pop())
+    print( 'This is an peek',s.peek())
